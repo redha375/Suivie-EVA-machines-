@@ -1,0 +1,10 @@
+{
+  "name": "CTP SMART",
+  "description": "ERP industriel intelligent CTP SMART : calcul dynamique des cartons par flux physique réel, fiches de production EVA1 à EVA4 avec 12 stations, formulaire de saisie quotidienne et calcul automatique du classement des équipes et machines.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
