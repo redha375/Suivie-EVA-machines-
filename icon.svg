@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="ctpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#1C2541" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle for PWA icon -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+
+  <!-- Outer injection mold grid lines -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#3B82F6" stroke-width="3" stroke-opacity="0.25" stroke-dasharray="8 8" />
+  <circle cx="256" cy="256" r="185" fill="none" stroke="#0284C7" stroke-width="1.5" stroke-opacity="0.2" />
+
+  <!-- Industrial Shoe Sole / Mold Contour -->
+  <g transform="translate(46, 50) scale(0.82)">
+    <!-- Shoe upper & sole silhouette -->
+    <path d="M 80 320 C 100 240, 160 210, 240 210 C 310 210, 360 250, 420 280 C 445 292, 455 315, 450 340 C 442 375, 400 385, 330 385 C 230 385, 140 380, 80 370 C 65 367, 60 345, 80 320 Z" 
+          fill="url(#ctpGrad)" filter="url(#glow)" opacity="0.95" />
+
+    <!-- Outsole Traction Cleats & Injection Channels (Semelle CTP) -->
+    <path d="M 110 370 L 130 395 L 155 370 L 175 395 L 200 370 L 220 395 L 245 370 L 265 395 L 290 370 L 310 395 L 335 370 L 355 395 L 380 370 L 400 390 L 420 365" 
+          fill="none" stroke="url(#amberGrad)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Technical Injection Stations Nodes -->
+    <circle cx="160" cy="285" r="14" fill="#60A5FA" />
+    <circle cx="250" cy="275" r="14" fill="#38BDF8" />
+    <circle cx="340" cy="295" r="14" fill="#F59E0B" />
+    <path d="M 160 285 L 250 275 L 340 295" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="4 4" opacity="0.8" />
+
+    <!-- Speed / Injection Wing Arc -->
+    <path d="M 120 250 Q 230 140 380 180" fill="none" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" opacity="0.7" />
+    <path d="M 160 230 Q 250 150 360 185" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+  </g>
+
+  <!-- Typography CTP SMART -->
+  <text x="256" y="440" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">
+    CTP SMART
+  </text>
+  <text x="256" y="470" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#F59E0B" text-anchor="middle" letter-spacing="3">
+    C.T PLAST • FOOTWEAR ERP
+  </text>
+</svg>
